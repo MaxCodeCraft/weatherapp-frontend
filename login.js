@@ -4,7 +4,7 @@ document.querySelector("#register").addEventListener("click", function () {
     email: document.querySelector("#registerEmail").value,
     password: document.querySelector("#registerPassword").value,
   };
-  fetch("http://localhost:3000/users/signup", {
+  fetch("https://weatherapp-backend-ten.vercel.app/users/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
@@ -24,7 +24,7 @@ document.querySelector("#connection").addEventListener("click", function () {
     email: document.querySelector("#registerEmail").value,
     password: document.querySelector("#registerPassword").value,
   };
-  fetch("http://localhost:3000/users/signin", {
+  fetch("https://weatherapp-backend-ten.vercel.app/users/signin", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
