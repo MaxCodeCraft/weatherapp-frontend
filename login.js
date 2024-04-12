@@ -4,11 +4,14 @@ document.querySelector("#register").addEventListener("click", function () {
     email: document.querySelector("#registerEmail").value,
     password: document.querySelector("#registerPassword").value,
   };
-  fetch("https://weatherapp-backend-ten.vercel.app/users/signup", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  })
+  fetch(
+    "https://weatherapp-backend-pr47xv4m5-maxcodecrafts-projects.vercel.app/users/signup",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       if (data) {
@@ -24,11 +27,14 @@ document.querySelector("#connection").addEventListener("click", function () {
     email: document.querySelector("#registerEmail").value,
     password: document.querySelector("#registerPassword").value,
   };
-  fetch("https://weatherapp-backend-ten.vercel.app/users/signin", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  })
+  fetch(
+    "https://weatherapp-backend-pr47xv4m5-maxcodecrafts-projects.vercel.app/users/signin",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       if (data) {
